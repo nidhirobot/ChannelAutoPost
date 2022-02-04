@@ -36,11 +36,11 @@ async def help(event):
                       link_preview=False,
                      )
 
-
+"""
 @ChannelAutoPostUB.on(events.NewMessage(pattern="^.alive$", outgoing=True))
 async def alive_ub(event):
     await event.edit("Sup? I am alive :)")
-    
+    """
     
 @ChannelAutoPost.on(events.NewMessage(pattern="^/alive$", func=lambda e: e.is_private, from_users=Config.OWNER_ID))
 async def alive_bot(event):
